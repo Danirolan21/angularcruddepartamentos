@@ -1,0 +1,16 @@
+<div class="container">
+    <form #insertForm="ngForm" class="form-group bg-dark text-light mt-3 p-3 rounded">
+        <label class="form-label">IdDepartamento: </label>
+        <input class="form-control text-dark" type="number" name="cajaid"
+        #cajaid/>
+        <label class="form-label">Nombre: </label>
+        <input class="form-control text-dark" type="text" name="cajanombre"
+        #cajanombre/>
+        <label class="form-label">Localidad: </label>
+        <input class="form-control text-dark" type="text" name="cajalocalidad"
+        #cajalocalidad/>
+        <button (click)="insertDepartamento()" class="btn btn-success mt-3">
+            Insertar Departamento
+        </button>
+    </form>
+</div>
